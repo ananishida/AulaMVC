@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model Pessoa
+@{
+}
+@using (Html.BeginForm("Cadastrar", "Home", FormMethod.Post))
+{
+    @Html.DisplayNameFor(p => p.Nome)
+    <br />
+    @Html.TextBoxFor(p => p.Nome)
+    <br />
+    <br />
+    <input type="submit" value="Cadastrar" />
+}
